@@ -1,0 +1,40 @@
+{
+  "users": [],
+  "vhosts": [
+    {
+      "name": "/"
+    }
+  ],
+  "permissions": [],
+  "exchanges": [
+    {
+      "name": "alerts",
+      "vhost": "/",
+      "type": "topic",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    }
+  ],
+  "queues": [
+    {
+      "name": "alerts_queue",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    }
+  ],
+  "bindings": [
+    {
+      "source": "alerts",
+      "vhost": "/",
+      "destination": "alerts_queue",
+      "destination_type": "queue",
+      "routing_key": "threshold.alert",
+      "arguments": {}
+    }
+  ],
+  "policies": []
+}

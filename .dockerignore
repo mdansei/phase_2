@@ -1,0 +1,37 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment directories
+venv/
+.env
+
+# Ignore Docker-related files
+Dockerfile
+docker-compose.yml
+
+# Ignore configuration files
+config/rabbitmq.conf
+config/definitions.json
+
+# Ignore logs
+*.log
+
+# Ignore test files and directories
+tests/
+*.test.py
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore other unnecessary files
+*.DS_Store
+*.egg-info/
+*.egg
+*.zip
+*.tar.gz
