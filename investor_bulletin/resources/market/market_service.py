@@ -8,7 +8,7 @@ from resources.market.market_schema import StockPrice
 from db.enums import StockSymbol
 
 API_URL = "https://twelve-data1.p.rapidapi.com/time_series"
-API_KEY = "203c1eff82mshab3b92818cafed3p19161ejsndc9fdfd1c2e8"
+API_KEY = "f5e5c79a63mshe71b2817bf1b165p1290a2jsne31b3ee0c59a"
 
 
 def get_market_data():
